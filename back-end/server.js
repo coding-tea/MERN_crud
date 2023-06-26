@@ -9,4 +9,6 @@ require('dotenv').config();
 connect(process.env.MONGO_URL);
 
 const dataRoutes = require('./routes/dataRoute');
-app.use('/data', )
+app.use('/data', dataRoutes);
+
+app.listen(5000, () => console.log('server is up.....'));
