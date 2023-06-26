@@ -50,10 +50,6 @@ module.exports = {
         });
     },
 
-    edit : (req, res) => {
-        
-    },
-
     destroy : (req, res) => {
         data.findByIdAndDelete(req.params.id)
         .then(() => {
