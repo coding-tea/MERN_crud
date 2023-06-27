@@ -43,3 +43,72 @@ header a{
     color: #bdd269;
     text-decoration: none;
 }
+
+.table{
+    width: 100%;
+    text-align: left;
+}
+
+.table table{
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.table table th{
+    color: #bdd269;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.table input{
+    background-color: #bdd269;
+    color: #001429;
+    padding: 5px 12px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.table a{
+    background-color: #bdd269;
+    color: #001429;
+    padding: 5px 12px;
+    margin-right: 10px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a{
+    color: white;
+    padding: 5px 0px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #bdd269;
+}
+
+.menu {
+    padding: 20px 0;
+}
+
+.create input{
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #bdd269;
+    color: #001429;
+    margin: 5px 0;
+}
+
+.create input[type='submit']{
+    margin-top: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+}

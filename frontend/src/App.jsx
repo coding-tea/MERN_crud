@@ -1,25 +1,28 @@
 //dependencies
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 //css
 import './app.css';
 
+//commponents
+import Menu from './components/Menu';
+import Index from './components/Index';
+import Show from './components/Show';
+import Create from './components/Create';
+
 function App() {
-
-
   return (
-    <div className='app'>
-      <header>
-          react router dom app <a href="https://github.com/coding-tea" target='_blank' rel="noreferrer">@codingTea <i class="bi bi-github"></i></a>
-      </header>
-      <div className="table">
-        <table>
-          <tr>
-            <th> # </th>
-            <th> name </th>
-          </tr>
-        </table>
-      </div>
-    </div>
+    <>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Menu />}>
+          <Route path='/' element={<Index />} />
+          <Route path='/show/:id' element={<Show />} />
+          <Route path='/create' element={<Create />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 
