@@ -20,18 +20,18 @@ module.exports = {
     create : (req, res) => {
         const new_data = new data(req.body);
         new_data.save()
-        .then(() => {
-            res.json({
-                success : true,
-                message : 'data is added'
-            });
-        })
-        .catch(err => {
-            res.json({
-                success : false,
-                message : err
-            });
-        });
+        // .then(() => {
+        //     res.json({
+        //         success : true,
+        //         message : 'data is added'
+        //     });
+        // })
+        // .catch(err => {
+        //     res.json({
+        //         success : false,
+        //         message : err
+        //     });
+        // });
     },
 
     show : (req, res) => {
@@ -52,17 +52,17 @@ module.exports = {
 
     destroy : (req, res) => {
         data.findByIdAndDelete(req.params.id)
-        .then(() => {
-            res.json({
-                success : true,
-                message : 'data deleted successfuly'
-            });
-        })
-        .catch(err => {
-            res.json({
-                success : false,
-                message : err
-            });
-        });
+        // .then(() => {
+        //     res.json({
+        //         success : true,
+        //         message : 'data deleted successfuly'
+        //     });
+        // })
+        // .catch(err => {
+        //     res.json({
+        //         success : false,
+        //         message : err
+        //     });
+        // });
     }
 };
